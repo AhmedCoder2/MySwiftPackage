@@ -7,10 +7,12 @@
 
 import SwiftUI
 
-struct MySwiftDemo: View {
+public struct MySwiftDemo: View {
+    
+    public init() {}
     
     @available(iOS 13.0, *)
-    var body: some View {
+    public var body: some View {
         VStack {
             if #available(iOS 17.0, *) {
                 Text("From package")
